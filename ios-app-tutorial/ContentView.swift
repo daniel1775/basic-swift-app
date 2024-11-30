@@ -10,13 +10,19 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            /*
-             Image(systemName: "globe")
-                 .imageScale(.large)
-                 .foregroundStyle(.tint)
-             Text("Hello, world! Tenki says hi")
-             */
-            Circle().fill(.red)
+            VStack {
+                Text("Why not try...")
+                    .font(.largeTitle.bold())
+            }
+            Circle()
+                .fill(.red)
+                .padding()
+                .overlay(Image(systemName: "figure.archery")
+                    .font(.system(size: 144))
+                    .foregroundColor(.white)
+                )
+            Text("Japanese arrow")
+                .font(.title)
         }
         .padding()
     }
